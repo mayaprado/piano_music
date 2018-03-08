@@ -1,0 +1,8 @@
+<div class="composers-container">
+  <h1>PianoApp</h1>
+  <% @composers.each do |composer| %>
+  <img src="<%= composer[:image] %>" />
+  <p><%= link_to composer[:name], "composers/#{composer[:id]}", class: "link" %></p>
+  <% end %>
+  <p><%= link_to "Add a new composer!", new_composer_path, class: "link" %></p>
+</div>

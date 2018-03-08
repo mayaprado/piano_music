@@ -1,0 +1,70 @@
+img {
+  max-width: 300px;
+  max-height: 300px;
+  border: 2px solid black;
+}
+
+.composers-container {
+  background: #cdddf7;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Rozha One', serif;
+  min-height: 700px;
+}
+
+.music-container {
+  background: #cdddf7;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Rozha One', serif;
+  min-height: 700px;
+}
+
+h1 {
+  font-size: 62px;
+  color: ivory;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3 {
+  font-size: 48px;
+  color: ivory;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p {
+  font-size: 34px;
+  color: ivory;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.button {
+  padding: 20px;
+}
+
+article {
+  color: black;
+  font-size: 24px;
+}
+
+.link {
+  font-size: 48px;
+  color: #7289af;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: ivory;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.link:after {
+  color: #7289af;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
+}
+
+

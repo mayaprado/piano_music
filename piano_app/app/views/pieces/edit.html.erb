@@ -1,0 +1,5 @@
+<div class="music-container">
+  <h1>Edit information about this Piece</h1>
+  <%= render partial: "form" %>
+  <%= link_to "Back to Composer", "http://localhost:3000/composers/#{@piece.composer[:id]}", class: "link" %>
+</div>

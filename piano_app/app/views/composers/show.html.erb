@@ -1,0 +1,17 @@
+<div class="composers-container">
+  <h1><%= @composer[:name] %></h1>
+  <img src="<%= @composer[:image] %>" />
+  <article><%= @composer[:bio] %></article>
+  <% @composer.pieces.each do |piece| %>
+  <p><%= link_to piece[:name], "../pieces/#{piece[:id]}", class: "link" %></p>
+  <audio controls>
+  <source src="../<%= piece[:url] %>" type="audio/mpeg">
+  </audio>
+  <br />
+  <% end %> 
+  <br />
+  <p><%= button_to "Add a Piece", new_piece_path, method: 'get' %><%= button_to "Edit Composer", edit_composer_path, method: 'get', class: "button" %><%= button_to "Delete Composer:(", composer_path, method: 'delete', class: "button" %></p>
+  
+  <p><%= link_to "Back to All Composers", composers_path, class: "link" %></p>
+  
+</div>

@@ -1,0 +1,11 @@
+<div class="music-container">
+  <h1>Music</h1>
+  <% @pieces.each do |piece| %>
+  <p><%= link_to piece[:name], "pieces/#{piece[:id]}", class: "link" %></p>
+  <audio controls>
+  <source src="<%= piece[:url] %>" type="audio/mpeg">
+  </audio>
+  <br />
+  <% end %>
+  <%= link_to "Go to Composers", composers_path, class: "link" %>
+</div>

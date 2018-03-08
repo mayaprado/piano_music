@@ -1,0 +1,12 @@
+<div class="music-container">
+  <h1><%= @piece[:name] %></h1>
+  <h3>by <%= @piece.composer[:name] %></h3>
+  <audio controls>
+  <source src="../<%= @piece[:url] %>" type="audio/mpeg">
+  </audio>
+  <br />
+  <p><%= button_to "Edit Piece", edit_piece_path, method: 'get', class: "button" %><%= button_to "Delete Piece:(", piece_path, method: 'delete', class: "button" %></p>
+  <br />
+  <p><%= link_to "Back to Composer", "../composers/#{@piece.composer[:id]}", class: "link" %></p>
+  <br />
+</div>
