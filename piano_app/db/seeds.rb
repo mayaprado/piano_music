@@ -12,7 +12,7 @@ pieces = Piece.create([
   {name: "Claire De Lune (Moonlight)", url: "./3.mp3", composer_id: 3},
   {name: "Sarabande", url: "./4.mp3", composer_id: 3},
   {name: "Arabesque No.1", url: "./5.mp3", composer_id: 3},
-  {name: "Seasone. June. Barcarolle", url: "./6.mp3", composer_id: 1},
+  {name: "Seasons. June. Barcarolle", url: "./6.mp3", composer_id: 1},
   {name: "Nocturne in A FLat Major", url: "./7.mp3", composer_id: 4},
   {name: "Seasons. March", url: "./8.mp3", composer_id: 1},
   {name: "Seasons. October. Autumn Song", url: "./9.mp3", composer_id: 1},

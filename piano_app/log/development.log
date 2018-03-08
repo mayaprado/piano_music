@@ -10569,3 +10569,75 @@ Processing by ComposersController#show as HTML
 Completed 200 OK in 40ms (Views: 31.3ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/composers" for 127.0.0.1 at 2018-03-07 19:16:57 -0500
+Processing by ComposersController#index as HTML
+  Rendering composers/index.html.erb within layouts/application
+  [1m[36mComposer Load (0.5ms)[0m  [1m[34mSELECT "composers".* FROM "composers"[0m
+  Rendered composers/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 81ms (Views: 72.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/composers/3" for 127.0.0.1 at 2018-03-07 19:17:03 -0500
+Processing by ComposersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mComposer Load (0.4ms)[0m  [1m[34mSELECT  "composers".* FROM "composers" WHERE "composers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering composers/show.html.erb within layouts/application
+  [1m[36mPiece Load (0.4ms)[0m  [1m[34mSELECT "pieces".* FROM "pieces" WHERE "pieces"."composer_id" = $1[0m  [["composer_id", 3]]
+  Rendered composers/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 38ms (Views: 29.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pieces/3" for 127.0.0.1 at 2018-03-07 19:18:21 -0500
+Processing by PiecesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPiece Load (2.7ms)[0m  [1m[34mSELECT  "pieces".* FROM "pieces" WHERE "pieces"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pieces/show.html.erb within layouts/application
+  [1m[36mComposer Load (0.6ms)[0m  [1m[34mSELECT  "composers".* FROM "composers" WHERE "composers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered pieces/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 34ms (Views: 24.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/composers/3" for 127.0.0.1 at 2018-03-07 19:18:25 -0500
+Processing by ComposersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mComposer Load (0.4ms)[0m  [1m[34mSELECT  "composers".* FROM "composers" WHERE "composers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering composers/show.html.erb within layouts/application
+  [1m[36mPiece Load (10.7ms)[0m  [1m[34mSELECT "pieces".* FROM "pieces" WHERE "pieces"."composer_id" = $1[0m  [["composer_id", 3]]
+  Rendered composers/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 42ms (Views: 24.1ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/composers" for 127.0.0.1 at 2018-03-07 19:18:26 -0500
+Processing by ComposersController#index as HTML
+  Rendering composers/index.html.erb within layouts/application
+  [1m[36mComposer Load (0.4ms)[0m  [1m[34mSELECT "composers".* FROM "composers"[0m
+  Rendered composers/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/composers/new" for 127.0.0.1 at 2018-03-07 19:18:30 -0500
+Processing by ComposersController#new as HTML
+  Rendering composers/new.html.erb within layouts/application
+  Rendered composers/_form.html.erb (2.0ms)
+  Rendered composers/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 34ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/composers" for 127.0.0.1 at 2018-03-07 19:18:32 -0500
+Processing by ComposersController#index as HTML
+  Rendering composers/index.html.erb within layouts/application
+  [1m[36mComposer Load (0.7ms)[0m  [1m[34mSELECT "composers".* FROM "composers"[0m
+  Rendered composers/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/composers/1" for 127.0.0.1 at 2018-03-07 19:18:34 -0500
+Processing by ComposersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mComposer Load (0.4ms)[0m  [1m[34mSELECT  "composers".* FROM "composers" WHERE "composers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering composers/show.html.erb within layouts/application
+  [1m[36mPiece Load (0.5ms)[0m  [1m[34mSELECT "pieces".* FROM "pieces" WHERE "pieces"."composer_id" = $1[0m  [["composer_id", 1]]
+  Rendered composers/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 38ms (Views: 30.8ms | ActiveRecord: 0.9ms)
+
+
